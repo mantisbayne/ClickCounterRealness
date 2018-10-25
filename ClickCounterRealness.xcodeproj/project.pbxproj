@@ -12,7 +12,18 @@
 		B1C5D505218282CF00402F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C5D503218282CF00402F7A /* Main.storyboard */; };
 		B1C5D507218282D000402F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C5D506218282D000402F7A /* Assets.xcassets */; };
 		B1C5D50A218282D000402F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C5D508218282D000402F7A /* LaunchScreen.storyboard */; };
+		B1C5D534218283D400402F7A /* ClickCounterRealnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5D533218283D400402F7A /* ClickCounterRealnessTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C5D536218283D400402F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C5D4F4218282CF00402F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C5D4FB218282CF00402F7A;
+			remoteInfo = ClickCounterRealness;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B1C5D4FC218282CF00402F7A /* ClickCounterRealness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounterRealness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		B1C5D506218282D000402F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C5D509218282D000402F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1C5D50B218282D000402F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C5D531218283D400402F7A /* ClickCounterRealnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickCounterRealnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C5D533218283D400402F7A /* ClickCounterRealnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCounterRealnessTests.swift; sourceTree = "<group>"; };
+		B1C5D535218283D400402F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B1C5D4F9218282CF00402F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C5D52E218283D400402F7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C5D4FE218282CF00402F7A /* ClickCounterRealness */,
+				B1C5D532218283D400402F7A /* ClickCounterRealnessTests */,
 				B1C5D4FD218282CF00402F7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C5D4FC218282CF00402F7A /* ClickCounterRealness.app */,
+				B1C5D531218283D400402F7A /* ClickCounterRealnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				B1C5D50B218282D000402F7A /* Info.plist */,
 			);
 			path = ClickCounterRealness;
+			sourceTree = "<group>";
+		};
+		B1C5D532218283D400402F7A /* ClickCounterRealnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C5D533218283D400402F7A /* ClickCounterRealnessTests.swift */,
+				B1C5D535218283D400402F7A /* Info.plist */,
+			);
+			path = ClickCounterRealnessTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = B1C5D4FC218282CF00402F7A /* ClickCounterRealness.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B1C5D530218283D400402F7A /* ClickCounterRealnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C5D538218283D400402F7A /* Build configuration list for PBXNativeTarget "ClickCounterRealnessTests" */;
+			buildPhases = (
+				B1C5D52D218283D400402F7A /* Sources */,
+				B1C5D52E218283D400402F7A /* Frameworks */,
+				B1C5D52F218283D400402F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C5D537218283D400402F7A /* PBXTargetDependency */,
+			);
+			name = ClickCounterRealnessTests;
+			productName = ClickCounterRealnessTests;
+			productReference = B1C5D531218283D400402F7A /* ClickCounterRealnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					B1C5D4FB218282CF00402F7A = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					B1C5D530218283D400402F7A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B1C5D4FB218282CF00402F7A;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				B1C5D4FB218282CF00402F7A /* ClickCounterRealness */,
+				B1C5D530218283D400402F7A /* ClickCounterRealnessTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1C5D52F218283D400402F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1C5D52D218283D400402F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C5D534218283D400402F7A /* ClickCounterRealnessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1C5D537218283D400402F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C5D4FB218282CF00402F7A /* ClickCounterRealness */;
+			targetProxy = B1C5D536218283D400402F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B1C5D503218282CF00402F7A /* Main.storyboard */ = {
@@ -314,6 +392,46 @@
 			};
 			name = Release;
 		};
+		B1C5D539218283D400402F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TV39QVN68K;
+				INFOPLIST_FILE = ClickCounterRealnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantisbayne.ClickCounterRealnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickCounterRealness.app/ClickCounterRealness";
+			};
+			name = Debug;
+		};
+		B1C5D53A218283D400402F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TV39QVN68K;
+				INFOPLIST_FILE = ClickCounterRealnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mantisbayne.ClickCounterRealnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClickCounterRealness.app/ClickCounterRealness";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +449,15 @@
 			buildConfigurations = (
 				B1C5D50F218282D000402F7A /* Debug */,
 				B1C5D510218282D000402F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C5D538218283D400402F7A /* Build configuration list for PBXNativeTarget "ClickCounterRealnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C5D539218283D400402F7A /* Debug */,
+				B1C5D53A218283D400402F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
